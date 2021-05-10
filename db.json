@@ -1,0 +1,543 @@
+{
+    "Menu":
+    {
+      "Mains": [
+      {
+          "name": "Beef",
+          "image": "",
+          "options": [
+            {
+              "id": 0,
+              "mainType": "Hamburgers",
+              "description": "Juicy burger, on a soft brioche bun",
+              "image": "https://images.unsplash.com/photo-1534790566855-4cb788d389ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+              "nutrition": {
+                "calories": 550,
+                "fat": 40,
+                "cholesterol": 40,
+                "sodium": 50,
+                "carbs": 20,
+                "protein": 60
+              }
+            },
+            {
+              "id": 1,
+              "mainType": "Steak",
+              "description": "This is great steak. Wow. So good. 5 stars!",
+              "image": "https://images.unsplash.com/photo-1608877906601-33195b1dc2cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=975&q=80",
+              "nutrition": {
+                "calories": 600,
+                "fat": 50,
+                "cholesterol": 45,
+                "sodium": 20,
+                "carbs": 10,
+                "protein": 65
+              }
+            },
+            {
+              "id": 2,
+              "mainType": "Meatloaf",
+              "description": "Not even my grandma makes meatloaf this good!",
+              "image": "https://images.unsplash.com/photo-1592791414620-80563b54ad5a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+              "nutrition": {
+                "calories": 5500,
+                "fat": 28,
+                "cholesterol": 43,
+                "sodium": 24,
+                "carbs": 9,
+                "protein": 57
+              }
+            },
+            {
+              "id": 3,
+              "mainType": "Beef Ribs",
+              "description": "The beefiest parmesan you'll ever eat",
+              "image": "",
+              "nutrition": {
+                "calories": 800,
+                "fat": 40,
+                "cholesterol": 40,
+                "sodium": 50,
+                "carbs": 20,
+                "protein": 60
+              }
+            },
+            {
+              "id": 4,
+              "mainType": "Beef Tacos",
+              "description": "Better than taco bell tacos",
+              "image": "",
+              "nutrition": {
+                "calories": 900,
+                "fat": 40,
+                "cholesterol": 40,
+                "sodium": 31,
+                "carbs": 42,
+                "protein": 43
+              }
+            }
+          ]
+        },
+        {
+          "name": "Poultry",
+          "image": "",
+          "options": [
+            {
+              "id": 5,
+              "mainType": "Chicken Pot Pie",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 780,
+                "fat": 40,
+                "cholesterol": 39,
+                "sodium": 43,
+                "carbs": 49,
+                "protein": 24
+              }
+            },
+            {
+              "id": 6,
+              "mainType": "Chicken Parmesean",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 576,
+                "fat": 39,
+                "cholesterol": 40,
+                "sodium": 62,
+                "carbs": 20,
+                "protein": 45
+              }
+            },
+            {
+              "id": 7,
+              "mainType": "Chicken Forgione",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 2000,
+                "fat": 34,
+                "cholesterol": 65,
+                "sodium": 47,
+                "carbs": 97,
+                "protein": 25
+              }
+            },
+            {
+              "id": 8,
+              "mainType": "Fried Chicken",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 999,
+                "fat": 94,
+                "cholesterol": 40,
+                "sodium": 50,
+                "carbs": 20,
+                "protein": 58
+              }
+            },
+            {
+              "id": 9,
+              "mainType": "Kung Pao Chicken",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 400,
+                "fat": 40,
+                "cholesterol": 40,
+                "sodium": 50,
+                "carbs": 20,
+                "protein": 60
+              }
+            }
+          ]
+        },
+        {
+          "name": "Seafood",
+          "image": "",
+          "options": [
+            {
+              "id": 10,
+              "mainType": "Maryland Blue Crabs",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 675,
+                "fat": 98,
+                "cholesterol": 23,
+                "sodium": 67,
+                "carbs": 34,
+                "protein": 11
+              }
+            },
+            {
+              "id": 11,
+              "mainType": "Salmon Sorrel",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 469,
+                "fat": 40,
+                "cholesterol": 14,
+                "sodium": 21,
+                "carbs": 8,
+                "protein": 45
+              }
+            },
+            {
+              "id": 12,
+              "mainType": "Crawfish",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 700,
+                "fat": 23,
+                "cholesterol": 63,
+                "sodium": 24,
+                "carbs": 42,
+                "protein": 43
+              }
+            },
+            {
+              "id": 13,
+              "mainType": "Garlic-Butter Cajun Cod",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 560,
+                "fat": 28,
+                "cholesterol": 17,
+                "sodium": 21,
+                "carbs": 9,
+                "protein": 36
+              }
+            },
+            {
+              "id": 14,
+              "mainType": "Seared Scallops",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 400,
+                "fat": 13,
+                "cholesterol": 27,
+                "sodium": 21,
+                "carbs": 10,
+                "protein": 34
+              }
+            }
+          ]
+        }
+      ],
+      "Sides": [
+      {
+          "name": "Salads",
+          "image": "",
+          "options": [
+            {
+              "id": 15,
+              "mainType": "Ceasar Salad",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 300,
+                "fat": 15,
+                "cholesterol": 40,
+                "sodium": 50,
+                "carbs": 20,
+                "protein": 60
+              }
+            },
+            {
+              "id": 16,
+              "mainType": "Fresh Chopped Salad",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 250,
+                "fat": 40,
+                "cholesterol": 40,
+                "sodium": 50,
+                "carbs": 20,
+                "protein": 60
+              }
+            },
+            {
+              "id": 17,
+              "mainType": "Seafood Salad",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 400,
+                "fat": 40,
+                "cholesterol": 40,
+                "sodium": 50,
+                "carbs": 20,
+                "protein": 60
+              }
+            },
+            {
+              "id": 18,
+              "mainType": "Papaya Salads",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 200,
+                "fat": 5,
+                "cholesterol": 7,
+                "sodium": 8,
+                "carbs": 5,
+                "protein": 14
+              }
+            },
+            {
+              "id": 19,
+              "mainType": "Caprese Salad",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 400,
+                "fat": 40,
+                "cholesterol": 40,
+                "sodium": 50,
+                "carbs": 20,
+                "protein": 60
+              }
+            }
+          ]
+        },
+        {
+          "name": "Soup",
+          "image": "",
+          "options": [
+            {
+              "id": 20,
+              "mainType": "Pho",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 850,
+                "fat": 80,
+                "cholesterol": 70,
+                "sodium": 40,
+                "carbs": 88,
+                "protein": 78
+              }
+            },
+            {
+              "id": 21,
+              "mainType": "New England Clam Chowder",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 600,
+                "fat": 72,
+                "cholesterol": 48,
+                "sodium": 50,
+                "carbs": 20,
+                "protein": 32
+              }
+            },
+            {
+              "id": 22,
+              "mainType": "Lobster Bisque",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 400,
+                "fat": 40,
+                "cholesterol": 40,
+                "sodium": 50,
+                "carbs": 20,
+                "protein": 60
+              }
+            },
+            {
+              "id": 23,
+              "mainType": "Broccoli Cheddar",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 600,
+                "fat": 40,
+                "cholesterol": 40,
+                "sodium": 50,
+                "carbs": 20,
+                "protein": 60
+              }
+            },
+            {
+              "id": 24,
+              "mainType": "Cream of Mushroom Soup",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 400,
+                "fat": 40,
+                "cholesterol": 48,
+                "sodium": 64,
+                "carbs": 22,
+                "protein": 37
+              }
+            }
+          ]
+        },
+        {
+          "name": "Sides",
+          "image": "",
+          "options": [
+            {
+              "id": 25,
+              "mainType": "Mashed potatoes",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 800,
+                "fat": 40,
+                "cholesterol": 40,
+                "sodium": 50,
+                "carbs": 20,
+                "protein": 60
+              }
+            },
+            {
+              "id": 26,
+              "mainType": "Soup Dumplings",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 600,
+                "fat": 40,
+                "cholesterol": 40,
+                "sodium": 50,
+                "carbs": 20,
+                "protein": 60
+              }
+            },
+            {
+              "id": 27,
+              "mainType": "6 Cheese Bacon Mac & Cheese",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 742,
+                "fat": 68,
+                "cholesterol": 47,
+                "sodium": 49,
+                "carbs": 42,
+                "protein": 60
+              }
+            },
+            {
+              "id": 28,
+              "mainType": "Roasted Brussell Sprouts",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 300,
+                "fat": 40,
+                "cholesterol": 40,
+                "sodium": 50,
+                "carbs": 20,
+                "protein": 60
+              }
+            },
+            {
+              "id": 29,
+              "mainType": "Eggrolls",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 350,
+                "fat": 26,
+                "cholesterol": 40,
+                "sodium": 50,
+                "carbs": 20,
+                "protein": 60
+              }
+            }
+          ]
+        }
+      ],
+      "Desserts": [
+        {
+          "name": "Desserts",
+          "image": "",
+          "options": [
+            {
+              "id": 30,
+              "mainType": "Marble Cake",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 400,
+                "fat": 40,
+                "cholesterol": 40,
+                "sodium": 50,
+                "carbs": 20,
+                "protein": 60
+              }
+            },
+            {
+              "id": 31,
+              "mainType": "Cheesecake",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 400,
+                "fat": 40,
+                "cholesterol": 40,
+                "sodium": 50,
+                "carbs": 20,
+                "protein": 60
+              }
+            },
+            {
+              "id": 32,
+              "mainType": "Tiramisu",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 350,
+                "fat": 40,
+                "cholesterol": 24,
+                "sodium": 18,
+                "carbs": 22,
+                "protein": 13
+              }
+            },
+            {
+              "id": 33,
+              "mainType": "Mochi Icecream",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 400,
+                "fat": 40,
+                "cholesterol": 40,
+                "sodium": 50,
+                "carbs": 20,
+                "protein": 60
+              }
+            },
+            {
+              "id": 34,
+              "mainType": "Icecream Cake",
+              "description": "",
+              "image": "",
+              "nutrition": {
+                "calories": 600,
+                "fat": 30,
+                "cholesterol": 60,
+                "sodium": 50,
+                "carbs": 20,
+                "protein": 60
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
