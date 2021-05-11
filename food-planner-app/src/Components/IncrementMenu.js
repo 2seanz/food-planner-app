@@ -1,9 +1,9 @@
 import React from 'react'
 
-const incrementMenu = () => {
-    return <button onClick={ null }>
-            Next Recipes
+const IncrementMenu = ( {incrementMenu}) => {
+    return <button onClick={() => incrementMenu()}>
+            More Recipes
           </button>
 }
 
-export default incrementMenu
+export default IncrementMenu

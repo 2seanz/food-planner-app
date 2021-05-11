@@ -1,9 +1,9 @@
 import React from 'react'
 
-const decrementMenu = () => {
-    return <button onClick={ null }>
+const DecrementMenu = ({decrementMenu}) => {
+    return <button onClick={() => decrementMenu()}>
             Previous Recipes
           </button>
 }
 
-export default decrementMenu
+export default DecrementMenu

@@ -50,3 +50,8 @@
   min-height: 4rem;
   max-height: 15rem;
 }
+
+.jumbotron {
+  /* max-width: 90rem; */
+  max-height: 19rem;
+}
