@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Navbar = (props) => {
+const Navbar = ({resetPosition}) => {
    
   return(
     <nav className="navbar navbar-light bg-info mb-4">
-      <Link to="/">
+      <Link to="/" onClick={() => resetPosition()}>
         <span className="navbar-brand">FarmFresh</span>
       </Link>
 

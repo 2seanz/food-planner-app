@@ -1,6 +1,7 @@
 import React from 'react'
 
-const IncrementMenu = ( {incrementMenu}) => {
+const IncrementMenu = ({incrementMenu}) => {
+
     return <button onClick={() => incrementMenu()}>
             More Recipes
           </button>

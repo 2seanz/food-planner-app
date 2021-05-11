@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 // Components
 import WelcomeSplash from '../Components/WelcomeSplash';
 
-const CourseContainer = () => {
+const CourseContainer = ({ handleCourseState }) => {
 
   return (
   
@@ -13,7 +13,7 @@ const CourseContainer = () => {
       <div className="row course-container">
         <div className="card-long m-2 p-2">
 
-          <Link to="/entrees">
+          <Link to="/entrees" onClick={() => handleCourseState("Entree")}>
             <div>
               <img src={ null } className="card-img-top" alt="..." />
                 <div className="card-body">
@@ -24,7 +24,7 @@ const CourseContainer = () => {
             </div>
           </Link>
 
-          <Link to="/sides">
+          <Link to="/sides" onClick={() => handleCourseState("Sides")}>
             <div>
               <img src={ null } className="card-img-top" alt="..." />
                 <div className="card-body">
@@ -35,7 +35,7 @@ const CourseContainer = () => {
             </div>
           </Link>
 
-          <Link to="/desserts">
+          <Link to="/desserts" onClick={() => handleCourseState("Dessert")}>
             <div>
               <img src={ null } className="card-img-top" alt="..." />
                 <div className="card-body">

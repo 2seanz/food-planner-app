@@ -1,7 +1,7 @@
 import { Component } from 'react';
+import { Route, Switch } from  'react-router-dom';
 import './styles/App.css';
 import './styles/index.css';
-import { Route, Switch } from  'react-router-dom';
 
 // Components
 import Navbar from './Components/Navbar';
@@ -37,10 +37,6 @@ class App extends Component {
     const filterMenu = menuCopy.filter(menuItems => menuItems.course === this.state.course)
     const filterType = filterMenu.filter(menuItems => menuItems.type === this.state.type)
 
-    // console.log(menuCopy)
-    // console.log(filterMenu)
-    // console.log(filterType)
-
     if(this.state.position > filterMenu.length) {
       this.setState({position: 0})
     // } else if(this.state.position > filterType.length) {
@@ -58,62 +54,80 @@ class App extends Component {
     }
   }
 
-  selectEntreeType = (event) => {
+  selectCourseType = (e) => {
     this.setState({
-      type: event,
+      type: e,
       position: 0
     })
   }
 
-  filterEntrees = () => {
+  filterCourses = () => {
 
     const menuCopy = [...this.state.menu]
     const filterEntrees = menuCopy.filter(menuItems => menuItems.course === this.state.course)
-    const menuIndex = filterEntrees.filter(menuItems => menuItems.type === this.state.type)
-
-    // console.log(menuCopy)
-    // console.log(filterEntrees)
-    // console.log(menuIndex)
+    const secondFilter = filterEntrees.filter(menuItems => menuItems.type === this.state.type)
 
     if(this.state.type === ""){
       return filterEntrees.slice(this.state.position, this.state.position + 3)
     } else {
-      return menuIndex.slice(this.state.position, this.state.position + 3)
+      return secondFilter.slice(this.state.position, this.state.position + 3)
     }
   }
+
+  handleCourseState = (e) => {this.setState({course: e})}
+
+  resetPosition = () => {this.setState({position: 0})}
 
 
   render() {
 
     return (
       <div className="App">
-        <Navbar />
+        <Navbar resetPosition={this.resetPosition} />
 
         <Switch>
 
           <Route path="/entrees">
             <EntreeContainer 
-              menu={this.filterEntrees()} 
+              menu={this.filterCourses()} 
               incrementMenu={this.incrementMenu} 
               decrementMenu={this.decrementMenu}
-              selectEntreeType={this.selectEntreeType}
+              selectEntreeType={this.selectCourseType}
               course={this.state.course} 
               type={this.state.type} 
             />
           </Route>
 
           <Route path="/sides">
-            <SidesContainer></SidesContainer>
+            <SidesContainer 
+              menu={this.filterCourses()} 
+              incrementMenu={this.incrementMenu} 
+              decrementMenu={this.decrementMenu}
+              selectEntreeType={this.selectCourseType}
+              course={this.state.course} 
+              type={this.state.type}
+            />
           </Route>
 
           <Route path="/desserts">
-            <DessertsContainer></DessertsContainer>
+            <DessertsContainer 
+              menu={this.filterCourses()} 
+              incrementMenu={this.incrementMenu} 
+              decrementMenu={this.decrementMenu}
+              selectEntreeType={this.selectCourseType}
+              course={this.state.course} 
+              type={this.state.type}
+            />
           </Route>
 
           <Route path="/cart"></Route>
 
-          <Route path="/" component={CourseContainer}/>
+          <Route path="/">
+            <CourseContainer handleCourseState={this.handleCourseState} />
+          </Route>
+
         </Switch>
+
       </div>
     );
   }
