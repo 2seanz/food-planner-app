@@ -44,6 +44,16 @@
   max-height: 35rem;
 }
 
+.card-long {
+  max-width: 60rem;
+  max-height: 35rem;
+}
+
+.course-container {
+  justify-content: center;
+  /* text-align: center; */
+}
+
 .typeSelect {
   min-width: 4rem;
   max-width: 35rem;
@@ -54,4 +64,11 @@
 .jumbotron {
   /* max-width: 90rem; */
   max-height: 19rem;
+}
+
+.search {
+  margin-left: 10px;
+  float: right;
+  height: 30px;
+  width: 200px;
 }

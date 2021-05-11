@@ -1,4 +1,6 @@
-import React, { Component, Fragment } from 'react';
+import React from 'react';
+
+// Components
 import Card from "../Components/Card";
 import DecrementMenu from '../Components/DecrementMenu';
 import IncrementMenu from '../Components/IncrementMenu';

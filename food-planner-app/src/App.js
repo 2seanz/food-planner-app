@@ -1,7 +1,15 @@
 import { Component } from 'react';
 import './styles/App.css';
-import EntreeContainer from './Containers/EntreeContainer';
+import './styles/index.css';
+import { Route, Switch } from  'react-router-dom';
+
+// Components
 import Navbar from './Components/Navbar';
+import EntreeContainer from './Containers/EntreeContainer';
+import CourseContainer from './Containers/CourseContainer';
+import SidesContainer from './Containers/SidesContainer';
+import DessertsContainer from './Containers/DessertsContainer';
+
 
 const API = "http://localhost:3000/Menu"
 
@@ -9,10 +17,10 @@ const API = "http://localhost:3000/Menu"
 class App extends Component {
 
   state = {
+    menu: [],
     course: "Entree",
     type: "",
     position: 0,
-    menu: []
   }
     
   componentDidMount() {
@@ -80,14 +88,32 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-        <EntreeContainer 
-          menu={this.filterEntrees()} 
-          incrementMenu={this.incrementMenu} 
-          decrementMenu={this.decrementMenu}
-          selectEntreeType={this.selectEntreeType}
-          course={this.state.course} 
-          type={this.state.type} 
-        />
+
+        <Switch>
+
+          <Route path="/entrees">
+            <EntreeContainer 
+              menu={this.filterEntrees()} 
+              incrementMenu={this.incrementMenu} 
+              decrementMenu={this.decrementMenu}
+              selectEntreeType={this.selectEntreeType}
+              course={this.state.course} 
+              type={this.state.type} 
+            />
+          </Route>
+
+          <Route path="/sides">
+            <SidesContainer></SidesContainer>
+          </Route>
+
+          <Route path="/desserts">
+            <DessertsContainer></DessertsContainer>
+          </Route>
+
+          <Route path="/cart"></Route>
+
+          <Route path="/" component={CourseContainer}/>
+        </Switch>
       </div>
     );
   }

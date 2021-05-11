@@ -7,7 +7,7 @@ import IncrementMenu from '../Components/IncrementMenu';
 import TypeSelect from '../Components/TypeSelect';
 
 
-const SidesContainer = ( props ) => {
+const DessertsContainer = ( props ) => {
 
   return (
     <div>
@@ -26,4 +26,4 @@ const SidesContainer = ( props ) => {
   )
 }
 
-  export default SidesContainer
+  export default DessertsContainer
