@@ -7,7 +7,7 @@ const TypeSelect = ({selectEntreeType, course}) => {
         <div className="container">
             <div className="ht-tm-header">
                 <h3 className="display-3">{`${course} Selections`}</h3>
-                <span className="lead text-primary">{`Select what kind of ${course.toLowerCase()} you would like and add any that look appetizing to your meal plan. You can always remove them later.`}</span>
+                <span className="lead text-primary">{`Select what kind of ${course.toLowerCase()}s you would like and add any that look appetizing to your meal plan. You can always remove them later.`}</span>
     
                 <div className="mt-4">
                     <button 

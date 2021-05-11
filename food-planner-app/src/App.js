@@ -9,7 +9,7 @@ const API = "http://localhost:3000/Menu"
 class App extends Component {
 
   state = {
-    course: "Mains",
+    course: "Entree",
     type: "",
     position: 0,
     menu: []
