@@ -9,6 +9,7 @@ import EntreeContainer from './Containers/EntreeContainer';
 import CourseContainer from './Containers/CourseContainer';
 import SidesContainer from './Containers/SidesContainer';
 import DessertsContainer from './Containers/DessertsContainer';
+import Cart from './Containers/Cart';
 
 
 const API = "http://localhost:3000/Menu"
@@ -120,7 +121,7 @@ class App extends Component {
             />
           </Route>
 
-          <Route path="/cart"></Route>
+          <Route path="/cart" component={Cart} />
 
           <Route path="/">
             <CourseContainer handleCourseState={this.handleCourseState} />
