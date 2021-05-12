@@ -15,7 +15,7 @@ const CourseContainer = ({ handleCourseState }) => {
 
           <Link to="/entrees" onClick={() => handleCourseState("Entree")}>
             <div>
-              <img src={"https://healthydirections.ca/wp-content/uploads/2019/08/Screen-Shot-2019-08-11-at-11.26.35-PM.png"} className="card-img-left" alt="..." />
+              <img src={"https://livingthegourmet.com/wp-content/uploads/2020/01/Steak_Board_5-scaled.jpg"} className="card-img-left" alt="..." />
                 <div className="card-body">
                     <h4 className="card-title">Entrees</h4>
                     <h5 className="card-title">{ null }</h5>

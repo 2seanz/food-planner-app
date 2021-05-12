@@ -2,9 +2,11 @@ import React from 'react';
 
 // Components
 import CartSplash from '../Components/CartSplash';
+import Card from '../Components/Card';
+import CartCard from '../Components/CartCard';
 
 
-const Cart = () => {
+const Cart = ({ cart }) => {
 
   return (
   
@@ -13,7 +15,8 @@ const Cart = () => {
         <div className="card-long m-2 p-2">
 
             <CartSplash />
-            <div>
+            { cart.map(cartItem => <CartCard key={cartItem.id} cartItem={cartItem}/>)}
+            {/* <div>
               <img src={ null } className="card-img-top" alt="..." />
                 <div className="card-body">
                     <h4 className="card-title">Monday</h4>
@@ -56,7 +59,7 @@ const Cart = () => {
                     <h5 className="card-title">{ null }</h5>
                     <p className="card-text">Make sure to have a Friday feast!</p>
                 </div>
-            </div>
+            </div> */}
 
         </div>
       </div>

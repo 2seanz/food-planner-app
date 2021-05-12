@@ -22,6 +22,7 @@ class App extends Component {
     course: "",
     type: "",
     position: 0,
+    cart: []
   }
     
   componentDidMount() {
@@ -52,18 +53,12 @@ class App extends Component {
   }
 
   decrementMenu = () => {
+
     if(this.state.position > 3) {
       this.setState({position: this.state.position - 3})
     } else {
       this.setState({position: 0})
     }
-  }
-
-  selectCourseType = (e) => {
-    this.setState({
-      type: e,
-      position: 0
-    })
   }
 
   filterCourses = () => {
@@ -78,6 +73,15 @@ class App extends Component {
       return secondFilter.slice(this.state.position, this.state.position + 3)
     }
   }
+
+  addToMealPlan = (menuItem) => {
+
+    if(!this.state.cart.includes(menuItem)) {
+      this.setState({cart: [...this.state.cart, menuItem]})
+    }
+  }
+
+  selectCourseType = (e) => {this.setState({type: e, position: 0})}
 
   handleCourseState = (e) => {this.setState({course: e})}
 
@@ -100,6 +104,8 @@ class App extends Component {
               selectEntreeType={this.selectCourseType}
               course={this.state.course} 
               type={this.state.type} 
+              wholeMenu={this.state.menu}
+              addToMealPlan={this.addToMealPlan}
             />
           </Route>
 
@@ -111,6 +117,8 @@ class App extends Component {
               selectEntreeType={this.selectCourseType}
               course={this.state.course} 
               type={this.state.type}
+              wholeMenu={this.state.menu}
+              addToMealPlan={this.addToMealPlan}
             />
           </Route>
 
@@ -122,10 +130,14 @@ class App extends Component {
               selectEntreeType={this.selectCourseType}
               course={this.state.course} 
               type={this.state.type}
+              wholeMenu={this.state.menu}
+              addToMealPlan={this.addToMealPlan}
             />
           </Route>
 
-          <Route path="/cart" component={Cart} />
+          <Route path="/cart">
+            <Cart cart={this.state.cart} />
+          </Route>
 
           <Route path="/">
             <CourseContainer handleCourseState={this.handleCourseState} />
