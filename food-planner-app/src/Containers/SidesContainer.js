@@ -12,7 +12,7 @@ const SidesContainer = ( props ) => {
   return (
     <div>
       <TypeSelect 
-        selectEntreeType={props.selectEntreeType} 
+        selectCourseType={props.selectCourseType} 
         type={props.type} 
         course={props.course} 
         menu={props.wholeMenu}
@@ -25,7 +25,6 @@ const SidesContainer = ( props ) => {
             menuItem={menuItem} 
             type={props.type} 
             addToMealPlan={props.addToMealPlan}
-            removeFromMealPlan={props.removeFromMealPlan}
           /> )}
         <IncrementMenu incrementMenu={props.incrementMenu} />
       </div>

@@ -105,7 +105,7 @@ class App extends Component {
               menu={this.filterCourses()} 
               incrementMenu={this.incrementMenu} 
               decrementMenu={this.decrementMenu}
-              selectEntreeType={this.selectCourseType}
+              selectCourseType={this.selectCourseType}
               course={this.state.course} 
               type={this.state.type} 
               wholeMenu={this.state.menu}
@@ -118,7 +118,7 @@ class App extends Component {
               menu={this.filterCourses()} 
               incrementMenu={this.incrementMenu} 
               decrementMenu={this.decrementMenu}
-              selectEntreeType={this.selectCourseType}
+              selectCourseType={this.selectCourseType}
               course={this.state.course} 
               type={this.state.type}
               wholeMenu={this.state.menu}
@@ -131,7 +131,7 @@ class App extends Component {
               menu={this.filterCourses()} 
               incrementMenu={this.incrementMenu} 
               decrementMenu={this.decrementMenu}
-              selectEntreeType={this.selectCourseType}
+              selectCourseType={this.selectCourseType}
               course={this.state.course} 
               type={this.state.type}
               wholeMenu={this.state.menu}
