@@ -15,7 +15,7 @@ const CourseContainer = ({ handleCourseState }) => {
 
           <Link to="/entrees" onClick={() => handleCourseState("Entree")}>
             <div>
-              <img src={ null } className="card-img-top" alt="..." />
+              <img src={"https://healthydirections.ca/wp-content/uploads/2019/08/Screen-Shot-2019-08-11-at-11.26.35-PM.png"} className="card-img-left" alt="..." />
                 <div className="card-body">
                     <h4 className="card-title">Entrees</h4>
                     <h5 className="card-title">{ null }</h5>
@@ -26,7 +26,7 @@ const CourseContainer = ({ handleCourseState }) => {
 
           <Link to="/sides" onClick={() => handleCourseState("Sides")}>
             <div>
-              <img src={ null } className="card-img-top" alt="..." />
+              <img className="courseImg" src={"https://c.ndtvimg.com/french-fries_625x300_1528454061766.jpg"} className="card-img-left" alt="..." />
                 <div className="card-body">
                     <h4 className="card-title">Sides</h4>
                     <h5 className="card-title">{ null }</h5>
@@ -37,7 +37,7 @@ const CourseContainer = ({ handleCourseState }) => {
 
           <Link to="/desserts" onClick={() => handleCourseState("Dessert")}>
             <div>
-              <img src={ null } className="card-img-top" alt="..." />
+              <img className="courseImg" src={"https://img.taste.com.au/f6_C_uDy/taste/2018/10/no-bake-rocky-road-cheesecake-143048-2.jpg"} className="card-img-left" alt="..." />
                 <div className="card-body">
                     <h4 className="card-title">Desserts</h4>
                     <h5 className="card-title">{ null }</h5>

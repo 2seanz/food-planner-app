@@ -9,6 +9,10 @@ const Navbar = ({resetPosition}) => {
         <span className="navbar-brand">FarmFresh</span>
       </Link>
 
+      <Link to="/cart" onClick={() => resetPosition()}>
+        <span className="navbar-cart">Cart</span>
+      </Link>
+
       <span>
         <input
           placeholder="search by name..."  

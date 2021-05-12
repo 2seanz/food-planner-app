@@ -45,12 +45,16 @@
 }
 
 .card-long {
-  max-width: 60rem;
-  max-height: 35rem;
+  max-width: 85rem;
+  max-height: 40rem;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 .course-container {
   justify-content: center;
+  margin-top: 2px;
+  margin-bottom: 2px;
   /* text-align: center; */
 }
 
@@ -71,4 +75,16 @@
   float: right;
   height: 30px;
   width: 200px;
+}
+
+.card-img-left {
+  min-width: 4rem;
+  max-width: 20rem;
+  min-height: 4rem;
+  max-height: 30rem;
+  float: left;
+}
+
+.navbar-cart {
+  float: right;
 }

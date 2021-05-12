@@ -2,7 +2,7 @@ import React from 'react'
 
 const DecrementMenu = ({decrementMenu}) => {
   
-    return <button onClick={() => decrementMenu()}>
+    return <button className="cycle" onClick={() => decrementMenu()}>
             Previous Recipes
           </button>
 }

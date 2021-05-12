@@ -19,7 +19,7 @@ class App extends Component {
 
   state = {
     menu: [],
-    course: "Entree",
+    course: "",
     type: "",
     position: 0,
   }
@@ -38,7 +38,11 @@ class App extends Component {
     const filterMenu = menuCopy.filter(menuItems => menuItems.course === this.state.course)
     const filterType = filterMenu.filter(menuItems => menuItems.type === this.state.type)
 
-    if(this.state.position > filterMenu.length) {
+    // console.log(menuCopy.length)
+    // console.log(filterMenu.length)
+    // console.log(filterType.length)
+
+    if(this.state.position > filterMenu.length-1) {
       this.setState({position: 0})
     // } else if(this.state.position > filterType.length) {
     //   this.setState({position: 0})
@@ -77,7 +81,7 @@ class App extends Component {
 
   handleCourseState = (e) => {this.setState({course: e})}
 
-  resetPosition = () => {this.setState({position: 0})}
+  resetPosition = () => {this.setState({position: 0, type: ""})}
 
 
   render() {
