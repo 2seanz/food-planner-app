@@ -12,6 +12,7 @@ const EntreeContainer = ( props ) => {
   return (
     <div>
       <TypeSelect 
+        selectCourse={props.selectCourse}
         selectCourseType={props.selectCourseType} 
         type={props.type} 
         course={props.course} 

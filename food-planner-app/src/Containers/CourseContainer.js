@@ -13,7 +13,7 @@ const CourseContainer = ({ handleCourseState }) => {
       <div className="row course-container">
         <div className="card-long m-2 p-2">
 
-          <Link to="/entrees" onClick={() => handleCourseState("Entree")}>
+          <Link to="/entrees" onClick={() => handleCourseState("Entrees")}>
             <div className="super-div">
               <div className="card-body-long">
                 <img src={"https://livingthegourmet.com/wp-content/uploads/2020/01/Steak_Board_5-scaled.jpg"} className="card-img-left" alt="..." />
@@ -33,7 +33,7 @@ const CourseContainer = ({ handleCourseState }) => {
             </div>
           </Link>
 
-          <Link to="/desserts" onClick={() => handleCourseState("Dessert")}>
+          <Link to="/desserts" onClick={() => handleCourseState("Desserts")}>
             <div className="super-div">
               <div className="card-body-long">
                 <img className="courseImg" src={"https://img.taste.com.au/f6_C_uDy/taste/2018/10/no-bake-rocky-road-cheesecake-143048-2.jpg"} className="card-img-left" alt="..." />

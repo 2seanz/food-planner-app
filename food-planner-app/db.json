@@ -2,7 +2,7 @@
   "Menu": [
     {
       "id": 0,
-      "course": "Entree",
+      "course": "Entrees",
       "type": "Beef",
       "dish": "Hamburger",
       "description": "Juicy burger, on a soft brioche bun",
@@ -18,7 +18,7 @@
     },
     {
       "id": 1,
-      "course": "Entree",
+      "course": "Entrees",
       "type": "Beef",
       "dish": "Steak",
       "description": "This is great steak. Wow. So good. 5 stars!",
@@ -34,7 +34,7 @@
     },
     {
       "id": 2,
-      "course": "Entree",
+      "course": "Entrees",
       "type": "Beef",
       "dish": "Meatloaf",
       "description": "Not even my grandma makes meatloaf this good!",
@@ -50,7 +50,7 @@
     },
     {
       "id": 3,
-      "course": "Entree",
+      "course": "Entrees",
       "type": "Beef",
       "dish": "Beef Ribs",
       "description": "The beefiest parmesan you'll ever eat",
@@ -66,7 +66,7 @@
     },
     {
       "id": 4,
-      "course": "Entree",
+      "course": "Entrees",
       "type": "Beef",
       "dish": "Beef Tacos",
       "description": "Better than taco bell tacos",
@@ -82,7 +82,7 @@
     },
     {
       "id": 0,
-      "course": "Entree",
+      "course": "Entrees",
       "type": "Beef",
       "dish": "Hamburger",
       "description": "Juicy burger, on a soft brioche bun",
@@ -98,7 +98,7 @@
     },
     {
       "id": 5,
-      "course": "Entree",
+      "course": "Entrees",
       "type": "Poultry",
       "dish": "Chicken Pot Pie",
       "description": "Placeholder text.",
@@ -114,7 +114,7 @@
     },
     {
       "id": 6,
-      "course": "Entree",
+      "course": "Entrees",
       "type": "Poultry",
       "dish": "Chicken Parmesean",
       "description": "",
@@ -130,7 +130,7 @@
     },
     {
       "id": 7,
-      "course": "Entree",
+      "course": "Entrees",
       "type": "Poultry",
       "dish": "Chicken Forgione",
       "description": "",
@@ -146,7 +146,7 @@
     },
     {
       "id": 8,
-      "course": "Entree",
+      "course": "Entrees",
       "type": "Poultry",
       "dish": "Fried Chicken",
       "description": "",
@@ -162,7 +162,7 @@
     },
     {
       "id": 9,
-      "course": "Entree",
+      "course": "Entrees",
       "type": "Poultry",
       "dish": "Kung Pao Chicken",
       "description": "",
@@ -178,7 +178,7 @@
     },
     {
       "id": 10,
-      "course": "Entree",
+      "course": "Entrees",
       "type": "Seafood",
       "dish": "Maryland Blue Crabs",
       "description": "The best crabs.",
@@ -194,7 +194,7 @@
     },
     {
       "id": 11,
-      "course": "Entree",
+      "course": "Entrees",
       "type": "Seafood",
       "dish": "Salmon Sorrel",
       "description": "",
@@ -210,7 +210,7 @@
     },
     {
       "id": 12,
-      "course": "Entree",
+      "course": "Entrees",
       "type": "Seafood",
       "dish": "Crawfish",
       "description": "",
@@ -226,7 +226,7 @@
     },
     {
       "id": 13,
-      "course": "Entree",
+      "course": "Entrees",
       "type": "Seafood",
       "dish": "Garlic-Butter Cajun Cod",
       "description": "",
@@ -242,7 +242,7 @@
     },
     {
       "id": 14,
-      "course": "Entree",
+      "course": "Entrees",
       "type": "Seafood",
       "dish": "Seared Scallops",
       "description": "",
@@ -498,7 +498,7 @@
     },
     {
       "id": 30,
-      "course": "Dessert",
+      "course": "Desserts",
       "type": "Dessert",
       "dish": "Marble Cake",
       "description": "",
@@ -514,7 +514,7 @@
     },
     {
       "id": 31,
-      "course": "Dessert",
+      "course": "Desserts",
       "type": "Dessert",
       "dish": "Cheesecake",
       "description": "",
@@ -530,7 +530,7 @@
     },
     {
       "id": 32,
-      "course": "Dessert",
+      "course": "Desserts",
       "type": "Dessert",
       "dish": "Tiramisu",
       "description": "",
@@ -546,7 +546,7 @@
     },
     {
       "id": 33,
-      "course": "Dessert",
+      "course": "Desserts",
       "type": "Dessert",
       "dish": "Mochi Icecream",
       "description": "",
@@ -562,7 +562,7 @@
     },
     {
       "id": 34,
-      "course": "Dessert",
+      "course": "Desserts",
       "type": "Dessert",
       "dish": "Icecream Cake",
       "description": "",

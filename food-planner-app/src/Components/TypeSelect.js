@@ -1,7 +1,8 @@
 import CourseSelectButton from './CourseSelectButton';
 import TypeSelectButton from './TypeSelectButton';
 
-const TypeSelect = ({selectCourseType, course, menu}) => {
+
+const TypeSelect = ({selectCourse, selectCourseType, course, menu}) => {
 
     const courseFilter = menu.filter(itemFilter => itemFilter.course === course)
     const typeArray = courseFilter.map(typeArr => typeArr.type)
@@ -10,8 +11,6 @@ const TypeSelect = ({selectCourseType, course, menu}) => {
     const inverseCourse = menu.filter(courseFilter => courseFilter.course !== course)
     const courseArr = inverseCourse.map(courseArr => courseArr.course)
     const uniqCourse = [...new Set(courseArr)]
-
-    console.log(uniqCourse)
 
     return (
         <div className="jumbotron bg-secondary text-center">
@@ -25,6 +24,7 @@ const TypeSelect = ({selectCourseType, course, menu}) => {
                             <CourseSelectButton 
                                 key={course} 
                                 course={course}  
+                                selectCourse={selectCourse}
                             /> )}
                     </div>
                     
