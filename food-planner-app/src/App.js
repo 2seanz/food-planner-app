@@ -81,6 +81,10 @@ class App extends Component {
     }
   }
 
+  removeFromMealPlan = (cartItem) => {
+    this.setState({cart: this.state.cart.filter(cart => cart.id !== cartItem.id)})
+  }
+
   selectCourseType = (e) => {this.setState({type: e, position: 0})}
 
   handleCourseState = (e) => {this.setState({course: e})}
@@ -136,7 +140,7 @@ class App extends Component {
           </Route>
 
           <Route path="/cart">
-            <Cart cart={this.state.cart} />
+            <Cart cart={this.state.cart} removeFromMealPlan={this.removeFromMealPlan}/>
           </Route>
 
           <Route path="/">

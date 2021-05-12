@@ -2,20 +2,24 @@ import React from 'react';
 
 // Components
 import CartSplash from '../Components/CartSplash';
-import Card from '../Components/Card';
 import CartCard from '../Components/CartCard';
 
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart, removeFromMealPlan }) => {
 
   return (
   
     <div>
-      <div className="row course-container">
-        <div className="card-long m-2 p-2">
+      <div className="cart-container">
+          <CartSplash />
+        <div className="row m1-3 text-center justify-content-center">
+          { cart.map(cartItem => 
+            <CartCard 
+              key={cartItem.id} 
+              cartItem={cartItem} 
+              removeFromMealPlan={removeFromMealPlan} 
+            />)}
 
-            <CartSplash />
-            { cart.map(cartItem => <CartCard key={cartItem.id} cartItem={cartItem}/>)}
             {/* <div>
               <img src={ null } className="card-img-top" alt="..." />
                 <div className="card-body">

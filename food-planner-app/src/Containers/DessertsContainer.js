@@ -25,6 +25,7 @@ const DessertsContainer = ( props ) => {
             menuItem={menuItem} 
             type={props.type} 
             addToMealPlan={props.addToMealPlan}
+            removeFromMealPlan={props.removeFromMealPlan}
           /> )}
         <IncrementMenu incrementMenu={props.incrementMenu} />
       </div>

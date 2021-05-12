@@ -1,4 +1,3 @@
-
 const TypeSelectButton = ({type, selectEntreeType}) => {
 
     return (

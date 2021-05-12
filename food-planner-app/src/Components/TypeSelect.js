@@ -1,6 +1,5 @@
 import TypeSelectButton from './TypeSelectButton';
 
-
 const TypeSelect = ({selectEntreeType, course, menu}) => {
 
     const courseFilter = menu.filter(itemFilter => itemFilter.course === course)

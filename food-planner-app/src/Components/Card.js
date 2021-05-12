@@ -1,5 +1,3 @@
-
-
 const Card = ({ menuItem, addToMealPlan }) => {
 
   return (

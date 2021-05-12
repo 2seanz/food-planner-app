@@ -1,6 +1,4 @@
-
-
-const CartCard = ({ cartItem }) => {
+const CartCard = ({ cartItem, removeFromMealPlan}) => {
 
     return (
       <div className="card m-2 p-2">
@@ -10,6 +8,10 @@ const CartCard = ({ cartItem }) => {
             <h5 className="card-title">{ null }</h5>
             <p className="card-text">{cartItem.description}</p>
             <button className="button p-1 m-1">Comment</button>
+            <button 
+                className="button p-1 m-1"
+                onClick={() => removeFromMealPlan(cartItem)}
+            >Remove</button>
         </div>
       </div>
     )
