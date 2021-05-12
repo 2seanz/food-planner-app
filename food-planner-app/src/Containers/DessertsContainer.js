@@ -11,7 +11,12 @@ const DessertsContainer = ( props ) => {
 
   return (
     <div>
-      <TypeSelect selectEntreeType={props.selectEntreeType} type={props.type} course={props.course} />
+      <TypeSelect 
+        selectEntreeType={props.selectEntreeType} 
+        type={props.type} 
+        course={props.course} 
+        menu={props.wholeMenu}
+      />
       <div className="row m1-3 text-center justify-content-center">
         <DecrementMenu decrementMenu={props.decrementMenu} />
         { props.menu.map( menuItem => 
@@ -19,6 +24,7 @@ const DessertsContainer = ( props ) => {
             key={menuItem.id} 
             menuItem={menuItem} 
             type={props.type} 
+            addToMealPlan={props.addToMealPlan}
           /> )}
         <IncrementMenu incrementMenu={props.incrementMenu} />
       </div>
