@@ -81,6 +81,12 @@ class App extends Component {
     }
   }
 
+  removeFromMealPlan = (cartItem) => {
+    this.setState({cart: this.state.cart.filter(cart => cart.id !== cartItem.id)})
+  }
+
+  selectCourse = (e) => {this.setState({course: e, type:"", position: 0})}
+
   selectCourseType = (e) => {this.setState({type: e, position: 0})}
 
   handleCourseState = (e) => {this.setState({course: e})}
@@ -101,7 +107,8 @@ class App extends Component {
               menu={this.filterCourses()} 
               incrementMenu={this.incrementMenu} 
               decrementMenu={this.decrementMenu}
-              selectEntreeType={this.selectCourseType}
+              selectCourse={this.selectCourse}
+              selectCourseType={this.selectCourseType}
               course={this.state.course} 
               type={this.state.type} 
               wholeMenu={this.state.menu}
@@ -114,7 +121,8 @@ class App extends Component {
               menu={this.filterCourses()} 
               incrementMenu={this.incrementMenu} 
               decrementMenu={this.decrementMenu}
-              selectEntreeType={this.selectCourseType}
+              selectCourse={this.selectCourse}
+              selectCourseType={this.selectCourseType}
               course={this.state.course} 
               type={this.state.type}
               wholeMenu={this.state.menu}
@@ -127,7 +135,8 @@ class App extends Component {
               menu={this.filterCourses()} 
               incrementMenu={this.incrementMenu} 
               decrementMenu={this.decrementMenu}
-              selectEntreeType={this.selectCourseType}
+              selectCourse={this.selectCourse}
+              selectCourseType={this.selectCourseType}
               course={this.state.course} 
               type={this.state.type}
               wholeMenu={this.state.menu}
@@ -136,7 +145,7 @@ class App extends Component {
           </Route>
 
           <Route path="/cart">
-            <Cart cart={this.state.cart} />
+            <Cart cart={this.state.cart} removeFromMealPlan={this.removeFromMealPlan}/>
           </Route>
 
           <Route path="/">

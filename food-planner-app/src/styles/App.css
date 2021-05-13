@@ -44,11 +44,11 @@
   max-height: 35rem;
 }
 
-.card-long {
-  max-width: 85rem;
-  max-height: 40rem;
-  margin-top: 2px;
-  margin-bottom: 2px;
+.super-div {
+  max-width: 155rem;
+  max-height: 155rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .course-container {
@@ -87,4 +87,8 @@
 
 .navbar-cart {
   float: right;
+}
+
+.cart-splash-container {
+  padding-bottom: 50px;
 }

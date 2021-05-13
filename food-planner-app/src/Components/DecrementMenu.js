@@ -1,5 +1,3 @@
-import React from 'react'
-
 const DecrementMenu = ({decrementMenu}) => {
   
     return <button className="cycle" onClick={() => decrementMenu()}>
