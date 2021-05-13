@@ -5,7 +5,7 @@ const ItemContainer = ({ item }) => {
             <div className="bg-secondary text-center p-4">
                 <div className="container">
                     <div className="ht-tm-header">
-                        <h3 className="display-5">{`Comments for ${item.dish}`}</h3>
+                        <h3 className="display-5 p-3">{`Comments for: ${item.dish}`}</h3>
                         <span className="lead text-primary">{`Check out what other FarmFresh users have to say about our delicious ${item.dish.toLowerCase()}!`}</span>
                     </div>
                 </div>

@@ -96,3 +96,7 @@
 .button {
   vertical-align: bottom;
 }
+
+.form-column {
+  width: 400px;
+}

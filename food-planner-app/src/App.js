@@ -10,6 +10,7 @@ import CourseContainer from './Containers/CourseContainer';
 import SidesContainer from './Containers/SidesContainer';
 import DessertsContainer from './Containers/DessertsContainer';
 import ItemContainer from './Containers/ItemContainer';
+import FormContainer from './Containers/FormContainer';
 import Cart from './Containers/Cart';
 
 
@@ -24,7 +25,7 @@ class App extends Component {
     type: "",
     position: 0,
     cart: [],
-    itemComments: []
+    item: []
   }
     
   componentDidMount() {
@@ -104,7 +105,11 @@ class App extends Component {
   // resets position, course and type in state when selecting brand on Navbar
   resetPosition = () => {this.setState({position: 0, course: "", type: ""})}
 
-  routeToComments = (e) => {this.setState({itemComments: e})}
+  // routes to item comments viewport
+  routeToComments = (e) => {this.setState({item: e})}
+
+  // pushes new menu item from Form into menu state
+  pushNewMenuItem = (newItem) => this.setState({menu: [...this.state.menu, newItem]})
 
 
   render() {
@@ -168,8 +173,12 @@ class App extends Component {
             />
           </Route>
 
-          <Route path={`/Menu/${this.state.itemComments.id}`}>
-            <ItemContainer item={this.state.itemComments} />
+          <Route path={`/Menu/${this.state.item.id}`}>
+            <ItemContainer item={this.state.item} />
+          </Route>
+
+          <Route path="/form">
+            <FormContainer pushNewMenuItem={this.pushNewMenuItem} />
           </Route>
 
           <Route path="/">
