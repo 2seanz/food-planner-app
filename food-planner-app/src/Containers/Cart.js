@@ -5,7 +5,7 @@ import CartSplash from '../Components/CartSplash';
 import CartCard from '../Components/CartCard';
 
 
-const Cart = ({ cart, removeFromMealPlan }) => {
+const Cart = ({ cart, removeFromMealPlan, routeToComments }) => {
 
   return (
   
@@ -17,7 +17,8 @@ const Cart = ({ cart, removeFromMealPlan }) => {
             <CartCard 
               key={cartItem.id} 
               cartItem={cartItem} 
-              removeFromMealPlan={removeFromMealPlan} 
+              removeFromMealPlan={removeFromMealPlan}
+              routeToComments={routeToComments} 
             />)}
 
             {/* <div>

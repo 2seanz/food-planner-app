@@ -9,6 +9,8 @@ import EntreeContainer from './Containers/EntreeContainer';
 import CourseContainer from './Containers/CourseContainer';
 import SidesContainer from './Containers/SidesContainer';
 import DessertsContainer from './Containers/DessertsContainer';
+import ItemContainer from './Containers/ItemContainer';
+import FormContainer from './Containers/FormContainer';
 import Cart from './Containers/Cart';
 
 
@@ -22,7 +24,8 @@ class App extends Component {
     course: "",
     type: "",
     position: 0,
-    cart: []
+    cart: [],
+    item: []
   }
     
   componentDidMount() {
@@ -33,6 +36,7 @@ class App extends Component {
     }))
   }
 
+  // scrolls three places to the right in the menu item carousel
   incrementMenu = () => {
 
     const menuCopy = [...this.state.menu]
@@ -52,6 +56,7 @@ class App extends Component {
     }
   }
 
+  // scrolls three places to the left in the menu item carousel
   decrementMenu = () => {
 
     if(this.state.position > 3) {
@@ -61,6 +66,7 @@ class App extends Component {
     }
   }
 
+  // filters which menu items to display in the menu carousel
   filterCourses = () => {
 
     const menuCopy = [...this.state.menu]
@@ -74,6 +80,7 @@ class App extends Component {
     }
   }
 
+  // adds selected menu item to "Meal Plan" or Cart
   addToMealPlan = (menuItem) => {
 
     if(!this.state.cart.includes(menuItem)) {
@@ -81,17 +88,28 @@ class App extends Component {
     }
   }
 
+  // removes selected menu item from the "Meal Plan" or Cart
   removeFromMealPlan = (cartItem) => {
     this.setState({cart: this.state.cart.filter(cart => cart.id !== cartItem.id)})
   }
 
+  // sets course in state and resets course type and position at the same time
   selectCourse = (e) => {this.setState({course: e, type:"", position: 0})}
 
+  // sets course type in state and resets position
   selectCourseType = (e) => {this.setState({type: e, position: 0})}
 
+  // handles a simple version of the course state setter for the CourseContainer
   handleCourseState = (e) => {this.setState({course: e})}
 
-  resetPosition = () => {this.setState({position: 0, type: ""})}
+  // resets position, course and type in state when selecting brand on Navbar
+  resetPosition = () => {this.setState({position: 0, course: "", type: ""})}
+
+  // routes to item comments viewport
+  routeToComments = (e) => {this.setState({item: e})}
+
+  // pushes new menu item from Form into menu state
+  pushNewMenuItem = (newItem) => this.setState({menu: [...this.state.menu, newItem]})
 
 
   render() {
@@ -113,6 +131,7 @@ class App extends Component {
               type={this.state.type} 
               wholeMenu={this.state.menu}
               addToMealPlan={this.addToMealPlan}
+              routeToComments={this.routeToComments}
             />
           </Route>
 
@@ -127,6 +146,7 @@ class App extends Component {
               type={this.state.type}
               wholeMenu={this.state.menu}
               addToMealPlan={this.addToMealPlan}
+              routeToComments={this.routeToComments}
             />
           </Route>
 
@@ -141,11 +161,24 @@ class App extends Component {
               type={this.state.type}
               wholeMenu={this.state.menu}
               addToMealPlan={this.addToMealPlan}
+              routeToComments={this.routeToComments}
             />
           </Route>
 
           <Route path="/cart">
-            <Cart cart={this.state.cart} removeFromMealPlan={this.removeFromMealPlan}/>
+            <Cart 
+              cart={this.state.cart} 
+              removeFromMealPlan={this.removeFromMealPlan}
+              routeToComments={this.routeToComments} 
+            />
+          </Route>
+
+          <Route path={`/Menu/${this.state.item.id}`}>
+            <ItemContainer item={this.state.item} />
+          </Route>
+
+          <Route path="/form">
+            <FormContainer pushNewMenuItem={this.pushNewMenuItem} />
           </Route>
 
           <Route path="/">
