@@ -92,3 +92,7 @@
 .cart-splash-container {
   padding-bottom: 50px;
 }
+
+.button {
+  vertical-align: bottom;
+}
