@@ -4,8 +4,8 @@
       "id": 0,
       "course": "Entrees",
       "type": "Beef",
-      "dish": "Hamburger",
-      "description": "Juicy burger, on a soft brioche bun",
+      "dish": "Grass-Fed Hamburger",
+      "description": "Juicy grass-fed beef burger, on a soft brioche bun",
       "image": "https://images.unsplash.com/photo-1534790566855-4cb788d389ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
       "nutrition": {
         "calories": 550,
@@ -20,7 +20,7 @@
       "id": 1,
       "course": "Entrees",
       "type": "Beef",
-      "dish": "Steak",
+      "dish": "Porterhouse Steak",
       "description": "This is great steak. Wow. So good. 5 stars!",
       "image": "https://images.unsplash.com/photo-1608877906601-33195b1dc2cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=975&q=80",
       "nutrition": {
@@ -52,7 +52,7 @@
       "id": 3,
       "course": "Entrees",
       "type": "Beef",
-      "dish": "Beef Ribs",
+      "dish": "Beef Short Ribs",
       "description": "The beefiest parmesan you'll ever eat",
       "image": "https://jesspryles.com/wp-content/uploads/2017/07/beef-chuck-ribs-29-1440x900.jpg",
       "nutrition": {
@@ -84,9 +84,9 @@
       "id": 0,
       "course": "Entrees",
       "type": "Beef",
-      "dish": "Hamburger",
-      "description": "Juicy burger, on a soft brioche bun",
-      "image": "https://images.unsplash.com/photo-1534790566855-4cb788d389ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+      "dish": "Impossible Burger",
+      "description": "Juicy burger, on a soft brioche bun. Only thing is... it's not beef!",
+      "image": "https://www.dcvelocity.com/ext/resources/images/articles/2020/202005/20200514impossible_burger.jpg?1589468649",
       "nutrition": {
         "calories": 550,
         "fat": 40,
@@ -101,7 +101,7 @@
       "course": "Entrees",
       "type": "Poultry",
       "dish": "Chicken Pot Pie",
-      "description": "Placeholder text.",
+      "description": "Better than BnB pot pie with free range chicken, peas and carrots.",
       "image": "https://images-gmi-pmc.edge-generalmills.com/27369a93-71b4-4dad-96dd-9656d63f146b.jpg",
       "nutrition": {
         "calories": 780,
@@ -117,7 +117,7 @@
       "course": "Entrees",
       "type": "Poultry",
       "dish": "Chicken Parmesean",
-      "description": "",
+      "description": "A classic Italian dish with locally sourced poultry and artisnal Wisconsin parmesean.",
       "image": "https://assets.bonappetit.com/photos/5ea8f0df16738800085ad5d2/master/pass/Chicken-Parmesean-Recipe-Lede.jpg",
       "nutrition": {
         "calories": 576,
@@ -133,7 +133,7 @@
       "course": "Entrees",
       "type": "Poultry",
       "dish": "Chicken Forgione",
-      "description": "",
+      "description": "Chicken the way Chef Forgione likes it. Seared and succulent with a hint of citrus and herb.",
       "image": "https://cdn.vox-cdn.com/thumbor/FL7hfZxc9evklhiUC86eHtp89fM=/0x0:1200x900/1200x800/filters:focal(0x0:1200x900)/cdn.vox-cdn.com/uploads/chorus_image/image/47460212/THUMB__1_.0.0.0.0.jpg",
       "nutrition": {
         "calories": 2000,
@@ -149,7 +149,7 @@
       "course": "Entrees",
       "type": "Poultry",
       "dish": "Fried Chicken",
-      "description": "",
+      "description": "Fried chicken as it was meant to be. Double battered with a satisfying crunch.",
       "image": "https://c.ndtvimg.com/2019-05/usn4dnv_fried-chicken_625x300_24_May_19.jpg",
       "nutrition": {
         "calories": 999,
@@ -165,7 +165,7 @@
       "course": "Entrees",
       "type": "Poultry",
       "dish": "Kung Pao Chicken",
-      "description": "",
+      "description": "A fresh take on this iconic Western-Chinese fusion dish!",
       "image": "https://www.awesomecuisine.com/wp-content/uploads/2015/07/kung_pao_chicken.jpg",
       "nutrition": {
         "calories": 400,
@@ -181,7 +181,7 @@
       "course": "Entrees",
       "type": "Seafood",
       "dish": "Maryland Blue Crabs",
-      "description": "The best crabs.",
+      "description": "Maryland blue crab fresh from the Chesapeake. Just boil, season well with Old Bay, and you're eating like a true Marylander.",
       "image": "https://cdnimg.webstaurantstore.com/images/products/large/444964/1680817.jpg",
       "nutrition": {
         "calories": 675,
@@ -197,7 +197,7 @@
       "course": "Entrees",
       "type": "Seafood",
       "dish": "Salmon Sorrel",
-      "description": "",
+      "description": "A dish that reinvented Fench cuisine. Salmon with a rich creme fraiche, white wine and lemon.",
       "image": "https://www.jamesmartinchef.co.uk/wp-content/uploads/TX25-JAMES-MARTIN-SALMON-WITH-SORREL-SAUCEjpg.jpg",
       "nutrition": {
         "calories": 469,
@@ -213,7 +213,7 @@
       "course": "Entrees",
       "type": "Seafood",
       "dish": "Crawfish",
-      "description": "",
+      "description": "Get your Summer living on with a course of fresh crawfish seasoned with a heaping of soul.",
       "image": "https://i.pinimg.com/originals/2d/f3/e5/2df3e5eddc94e2e6ddb936c241241997.jpg",
       "nutrition": {
         "calories": 700,
@@ -229,7 +229,7 @@
       "course": "Entrees",
       "type": "Seafood",
       "dish": "Garlic-Butter Cajun Cod",
-      "description": "",
+      "description": "Flaky and delicious North Atlantic cod in an absoloutely mouth watering garlic-butter cajun sauce.",
       "image": "https://therecipecritic.com/wp-content/uploads/2020/02/baked_cod_hero-2.jpg",
       "nutrition": {
         "calories": 560,
@@ -244,8 +244,8 @@
       "id": 14,
       "course": "Entrees",
       "type": "Seafood",
-      "dish": "Seared Scallops",
-      "description": "",
+      "dish": "Seared Lemon Garlic Scallops",
+      "description": "Six jumbo scallops in a tart and tangy lemon garlic jus.",
       "image": "https://i.ytimg.com/vi/FpZZE5m5W7I/maxresdefault.jpg",
       "nutrition": {
         "calories": 400,
@@ -261,7 +261,7 @@
       "course": "Sides",
       "type": "Salads",
       "dish": "Ceasar Salad",
-      "description": "",
+      "description": "Low calorie but great tasting salad",
       "image": "https://www.tasteandtellblog.com/wp-content/uploads/2020/05/Shrimp-Caesar-Salad-1.jpg",
       "nutrition": {
         "calories": 300,
@@ -277,7 +277,7 @@
       "course": "Sides",
       "type": "Salads",
       "dish": "Fresh Chopped Salad",
-      "description": "",
+      "description": "Only the freshest ingredients our chef’s have single handedly picked out.",
       "image": "https://lilaruthgrainfree.com/wp-content/uploads/2020/09/chopped-salad-scaled.jpg",
       "nutrition": {
         "calories": 250,
@@ -293,7 +293,7 @@
       "course": "Sides",
       "type": "Salads",
       "dish": "Seafood Salad",
-      "description": "",
+      "description": "Fresh salad with amazing seafood toppings.",
       "image": "https://www.norinesnest.com/wp-content/uploads/2020/07/Seafood-Pasta-Salad-2020-7-e1593809470959.jpg",
       "nutrition": {
         "calories": 400,
@@ -309,7 +309,7 @@
       "course": "Sides",
       "type": "Salads",
       "dish": "Papaya Salads",
-      "description": "",
+      "description": "Mix of papaya and other freshly chopped veggies.",
       "image": "https://www.vikingrivercruises.com/images/Green_Papaya_Salad_Alamy_RM_500x250_tcm21-45867.jpg",
       "nutrition": {
         "calories": 200,
@@ -325,7 +325,7 @@
       "course": "Sides",
       "type": "Salads",
       "dish": "Caprese Salad",
-      "description": "",
+      "description": "Juicy Roma tomato topped with fresh basil and home made mozzarella cheese.",
       "image": "https://www.sonomafarm.com/wp-content/uploads/2017/10/Caprese-Balsamic-Recipe.jpg",
       "nutrition": {
         "calories": 400,
@@ -341,7 +341,7 @@
       "course": "Sides",
       "type": "Soup",
       "dish": "Pho",
-      "description": "",
+      "description": "Our take on this legendary dish. Beef, rice noodles, herbs and a hot pepper blend.",
       "image": "https://steamykitchen.com/wp-content/uploads/2008/02/vietnamese-pho-recipe-2-480x270.jpg",
       "nutrition": {
         "calories": 850,
@@ -357,7 +357,7 @@
       "course": "Sides",
       "type": "Soup",
       "dish": "New England Clam Chowder",
-      "description": "",
+      "description": "Rich and creamy soup swimming with clams, potatoes, herbs and of course bacon.",
       "image": "https://theschmidtywife.com/wp-content/uploads/2019/11/clam-chowder-in-bowl.jpg.webp",
       "nutrition": {
         "calories": 600,
@@ -373,7 +373,7 @@
       "course": "Sides",
       "type": "Soup",
       "dish": "Lobster Bisque",
-      "description": "",
+      "description": "A smooth, creamy and well seasoned French classic with lumps of fresh caught Maine lobster.",
       "image": "https://www.livingchirpy.com/wp-content/uploads/2018/07/Lobster-Bisque-Thumb.jpg",
       "nutrition": {
         "calories": 400,
@@ -389,7 +389,7 @@
       "course": "Sides",
       "type": "Soup",
       "dish": "Broccoli Cheddar",
-      "description": "",
+      "description": "Hearty soup with carmelized onion, garlic butter roux with pureed broccoli and carrots finished with grated parmesean and cheddar.",
       "image": "https://hips.hearstapps.com/hmg-prod/images/broccoli-cheddar-soup-horizontal-1540413281.png",
       "nutrition": {
         "calories": 600,
@@ -405,7 +405,7 @@
       "course": "Sides",
       "type": "Soup",
       "dish": "Cream of Mushroom Soup",
-      "description": "",
+      "description": "A simple yet delicious creamy soup with a generous portion of baby bella, button and portobello mushrooms.",
       "image": "https://www.recipegirl.com/wp-content/uploads/2017/11/Cream-of-Mushroom-Soup-6-600x400.jpg",
       "nutrition": {
         "calories": 400,
@@ -420,8 +420,8 @@
       "id": 25,
       "course": "Sides",
       "type": "Sides",
-      "dish": "Mashed potatoes",
-      "description": "",
+      "dish": "Mashed Potatoes",
+      "description": "Smashed Yukon Golds with garlic, butter, creame and a host of herbs and spices.",
       "image": "https://grandbaby-cakes.com/wp-content/uploads/2019/09/Garlic-Mashed-Potatoes-Recipe-1-500x375.jpg",
       "nutrition": {
         "calories": 800,
@@ -437,7 +437,7 @@
       "course": "Sides",
       "type": "Sides",
       "dish": "Soup Dumplings",
-      "description": "",
+      "description": "This Shanghai specialty is a little pocket of heaven with perfectly seasoned pork and an explosion of delicious pork broth.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbrLDunEzzcMV6vmOyp_AzAjqE6jE1DdcvKA&usqp=CAU",
       "nutrition": {
         "calories": 600,
@@ -453,7 +453,7 @@
       "course": "Sides",
       "type": "Sides",
       "dish": "6 Cheese Bacon Mac & Cheese",
-      "description": "",
+      "description": "As comfort as it gets. Our six cheese bacon mac will keep you full and happy year around.",
       "image": "http://www.disneyfoodblog.com/wp-content/uploads/2017/02/Six-Cheese-Chicken-Macaroni-and-Cheese_Planet-Hollywood_17-47-700x465.jpg",
       "nutrition": {
         "calories": 742,
@@ -469,7 +469,7 @@
       "course": "Sides",
       "type": "Sides",
       "dish": "Roasted Brussell Sprouts",
-      "description": "",
+      "description": "Brussle sprouts chopped and roasted in olive oil, herbs and a tart vinaigrette.",
       "image": "https://images.media-allrecipes.com/userphotos/7244014.jpg",
       "nutrition": {
         "calories": 300,
@@ -485,7 +485,7 @@
       "course": "Sides",
       "type": "Sides",
       "dish": "Eggrolls",
-      "description": "",
+      "description": "Savory with a pork and vegetable medley lightly fried in oil.",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/antipasto-eggrolls-220-copy-1547844546.jpg",
       "nutrition": {
         "calories": 350,
@@ -501,7 +501,7 @@
       "course": "Desserts",
       "type": "Dessert",
       "dish": "Marble Cake",
-      "description": "",
+      "description": "Delicious home-made marble cake.",
       "image": "https://tasteasianfood.com/wp-content/uploads/2020/04/Marble-cake-featured-image.jpeg",
       "nutrition": {
         "calories": 400,
@@ -517,7 +517,7 @@
       "course": "Desserts",
       "type": "Dessert",
       "dish": "Cheesecake",
-      "description": "",
+      "description": "Award winning cheesecake.",
       "image": "https://images-gmi-pmc.edge-generalmills.com/2cf7e5b5-728c-4c58-bffc-752ea2684625.jpg",
       "nutrition": {
         "calories": 400,
@@ -533,7 +533,7 @@
       "course": "Desserts",
       "type": "Dessert",
       "dish": "Tiramisu",
-      "description": "",
+      "description": "Sweet and soft texture with an explosive coffee flavor.",
       "image": "https://media-cdn.tripadvisor.com/media/photo-s/0e/95/37/7f/mac-nut-tiramasu-dessert.jpg",
       "nutrition": {
         "calories": 350,
@@ -549,7 +549,7 @@
       "course": "Desserts",
       "type": "Dessert",
       "dish": "Mochi Icecream",
-      "description": "",
+      "description": "Delicious bite sized ice cream pieces.",
       "image": "https://kcp-wpengine.netdna-ssl.com/wp-content/uploads/2011/12/Mochi-dessert-1024x562.jpg",
       "nutrition": {
         "calories": 400,
@@ -565,7 +565,7 @@
       "course": "Desserts",
       "type": "Dessert",
       "dish": "Icecream Cake",
-      "description": "",
+      "description": "Just your typical 10 year olds birthday party ice cream cake.",
       "image": "https://assets.epicurious.com/photos/5610268af3a00aeb2f1d7b12/1:1/w_600%2Ch_600/103791.jpg",
       "nutrition": {
         "calories": 600,

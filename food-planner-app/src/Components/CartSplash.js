@@ -5,6 +5,8 @@ const CartSplash = ({ cart }) => {
       return "Looks empty in here..."
     } else if(cart.length < 5) {
       return "Those are some great picks!"
+    } else if(cart.length < 10) {
+      return "Nearly there!"
     } else {
       return "Mmmmm! Looks like a great meal plan!"
     }
@@ -15,6 +17,8 @@ const CartSplash = ({ cart }) => {
       return "Head on back to the menue to take a look at our great selections!"
     } else if(cart.length < 5) {
       return "... but we still need a few more! Let's head back to the menue and find some other delicious options!"
+    } else if(cart.length < 10) {
+      return "Just a few more dinners and we're good for the week!"
     } else {
       return "You've got it! This looks like dinner for a week!"
     }
