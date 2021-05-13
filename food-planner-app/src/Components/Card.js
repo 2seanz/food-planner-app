@@ -1,4 +1,6 @@
-const Card = ({ menuItem, addToMealPlan }) => {
+import { Link } from 'react-router-dom';
+
+const Card = ({ menuItem, addToMealPlan, routeToComments }) => {
 
   return (
     <div className="card m-2 p-2">
@@ -11,7 +13,12 @@ const Card = ({ menuItem, addToMealPlan }) => {
               onClick={() => addToMealPlan(menuItem)}
               className="button p-1 m-1"
               >Add to Menu</button>
-          <button className="button p-1 m-1">Comment</button>
+          <Link to={`/Menu/${menuItem.id}`}>
+            <button 
+              className="button p-1 m-1"
+              onClick={() => routeToComments(menuItem)}
+            >Comment</button>
+          </Link>
       </div>
     </div>
   )
