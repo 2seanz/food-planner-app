@@ -11,7 +11,7 @@ const Cart = ({ cart, removeFromMealPlan }) => {
   
     <div>
       <div className="cart-container">
-          <CartSplash />
+          <CartSplash cart={cart} />
         <div className="row m1-3 text-center justify-content-center">
           { cart.map(cartItem => 
             <CartCard 

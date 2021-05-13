@@ -18,6 +18,7 @@ const DessertsContainer = ( props ) => {
         course={props.course} 
         menu={props.wholeMenu}
       />
+      
       <div className="row m1-3 text-center justify-content-center">
         <DecrementMenu decrementMenu={props.decrementMenu} />
         { props.menu.map( menuItem => 
