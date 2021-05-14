@@ -9,12 +9,14 @@ const CartCard = ({ cartItem, removeFromMealPlan, routeToComments}) => {
             <h4 className="card-title">{cartItem.dish}</h4>
             <h5 className="card-title">{ null }</h5>
             <p className="card-text">{cartItem.description}</p>
+
             <Link to={`/Menu/${cartItem.id}`}>
                 <button 
                     className="button p-1 m-1"
                     onClick={() => routeToComments(cartItem)}
                 >Comment</button>
             </Link>
+
             <button 
                 className="button p-1 m-1"
                 onClick={() => removeFromMealPlan(cartItem)}

@@ -14,7 +14,7 @@ import FormContainer from './Containers/FormContainer';
 import Cart from './Containers/Cart';
 
 
-const API = "http://localhost:3000/Menu"
+const API = "http://localhost:3000/menuItems?_embed=comments"
 
 
 class App extends Component {
@@ -111,6 +111,9 @@ class App extends Component {
   // pushes new menu item from Form into menu state
   pushNewMenuItem = (newItem) => this.setState({menu: [...this.state.menu, newItem]})
 
+  // pushes new comment from ItemContainer into comments state
+  pushNewComment = (comment) => {this.setState({comments: comment})}
+
 
   render() {
 
@@ -174,7 +177,7 @@ class App extends Component {
           </Route>
 
           <Route path={`/Menu/${this.state.item.id}`}>
-            <ItemContainer item={this.state.item} />
+            <ItemContainer item={this.state.item} pushNewComment={this.pushNewComment} />
           </Route>
 
           <Route path="/form">

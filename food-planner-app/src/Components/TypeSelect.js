@@ -4,10 +4,12 @@ import TypeSelectButton from './TypeSelectButton';
 
 const TypeSelect = ({selectCourse, selectCourseType, course, menu}) => {
 
+    // filters through menu to create an array of unique course types
     const courseFilter = menu.filter(itemFilter => itemFilter.course === course)
     const typeArray = courseFilter.map(typeArr => typeArr.type)
     const uniqType = [...new Set(typeArray)]
 
+    // filters through menu to create an array of unique courses
     const inverseCourse = menu.filter(courseFilter => courseFilter.course !== course)
     const courseArr = inverseCourse.map(courseArr => courseArr.course)
     const uniqCourse = [...new Set(courseArr)]

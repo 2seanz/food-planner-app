@@ -1,6 +1,6 @@
 import { Component } from 'react';
 
-const API = "http://localhost:3000/Menu"
+const API = "http://localhost:3000/menuItems"
 
 class FormContainer extends Component {
 

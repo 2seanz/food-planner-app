@@ -13,12 +13,14 @@ const Card = ({ menuItem, addToMealPlan, routeToComments }) => {
               onClick={() => addToMealPlan(menuItem)}
               className="button p-1 m-1"
               >Add to Menu</button>
+
           <Link to={`/Menu/${menuItem.id}`}>
             <button 
               className="button p-1 m-1"
               onClick={() => routeToComments(menuItem)}
             >Comment</button>
           </Link>
+
       </div>
     </div>
   )
